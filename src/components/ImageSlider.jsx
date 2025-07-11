@@ -94,7 +94,10 @@ const MaroonSlider = () => {
             }}
           >
             <div className="max-w-xs">
-              <p className="font-bold text-base mb-6 leading-relaxed">
+              <h2 className="text-5xl font-bold mb-2 text-start">
+                HERE'S YOUR <span className="font-bold">HOR</span>
+              </h2>
+              <p className="text-base mb-6 text-start leading-relaxed">
                 IT ALL STARTS WITH HAIR, THE HIGHEST QUALITY EUROPEAN HAIR
               </p>
             </div>
