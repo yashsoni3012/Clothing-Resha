@@ -98,8 +98,25 @@ const MaroonSlider = () => {
                 IT ALL STARTS WITH HAIR, THE HIGHEST QUALITY EUROPEAN HAIR
               </p>
             </div>
-            <button className="bg-gray-600 hover:bg-gray-700 text-sm text-white font-semibold px-12 py-4 rounded-full transition w-fit mt-2">
-              BOOK NOW
+            <button className="group flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-white transition-all duration-300">
+              <div className="relative">
+                <span className="font-medium">BOOK NOW</span>
+                <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+              </div>
+              <svg
+                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
             </button>
           </div>
 

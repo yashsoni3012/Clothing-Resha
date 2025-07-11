@@ -33,9 +33,8 @@ const Carousel = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-5/6 sm:w-1/2 z-50 p-6 pt-24 transition-transform duration-300 ease-in-out transform ${
-          sidebarOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden`}
+        className={`fixed top-0 right-0 h-full w-5/6 sm:w-1/2 z-50 p-6 pt-24 transition-transform duration-300 ease-in-out transform ${sidebarOpen ? "translate-x-0" : "translate-x-full"
+          } md:hidden`}
         style={{
           backgroundImage:
             "linear-gradient(to bottom, rgb(109, 13, 47), rgb(26, 26, 26))",
@@ -71,7 +70,15 @@ const Carousel = () => {
         {/* Navigation Bar */}
         <div className="flex items-center justify-between gap-4 mb-10">
           {/* Left: Logo */}
-          <img src={logo} alt="Logo" className="h-12 w-auto sm:h-14 md:h-16" />
+          <div className="sticky top-0 left-0 z-50  px-4 py-2 ">
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-12 w-auto sm:h-14 md:h-16"
+            />
+          </div>
+
+
 
           {/* Right: Nav + Search (Desktop Only) */}
           <div className="hidden md:flex items-center gap-6 bg-white/10 backdrop-blur-md md:px-6 md:py-2 rounded-full shadow-md">
