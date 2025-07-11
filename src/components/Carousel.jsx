@@ -142,9 +142,14 @@ const Carousel = () => {
               playsInline
               className="w-full h-full object-cover rounded-l-xl"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent rounded-l-xl" />
+            {/* Enhanced shadow gradient that blends into black background */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/30 to-black/10 rounded-l-xl" />
           </div>
-          <div className="w-full md:w-1/2 bg-black p-6 sm:p-10 flex flex-col justify-center rounded-r-xl">
+
+          <div className="w-full md:w-1/2 bg-black p-6 sm:p-10 flex flex-col justify-center rounded-r-xl relative">
+            {/* Black shadow on left edge */}
+            <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-black/100 to-black/0" />
+
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-wide">
               TIMELESS DESIGN
             </h1>
