@@ -101,10 +101,13 @@ const MaroonSlider = () => {
             <button className="group flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-white transition-all duration-300">
               <div className="relative">
                 <span className="font-medium">BOOK NOW</span>
-                <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                {/* Underline */}
+                <span className="absolute left-1/2 bottom-0 h-[1px] w-0 bg-white transition-all duration-300 origin-center group-hover:left-0 group-hover:w-full"></span>
               </div>
+
+              {/* Arrow Icon */}
               <svg
-                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -118,6 +121,7 @@ const MaroonSlider = () => {
                 />
               </svg>
             </button>
+
           </div>
 
           {/* Image Slider */}
