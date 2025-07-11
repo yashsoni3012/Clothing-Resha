@@ -21,7 +21,7 @@ const ImageGrid = () => {
                 {images.map((img, index) => (
                     <div
                         key={index} 
-                        className="relative group  w-full aspect-[4/3]  overflow-hidden rounded-xl shadow-lg"
+                        className="relative group  w-full aspect-[4/3]  overflow-hidden rounded-xl shadow-lg"     
                     >
                         <img
                             src={img}
