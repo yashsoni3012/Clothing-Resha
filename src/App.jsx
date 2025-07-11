@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <div className="relative">
         {/* You can include Navbar here if it’s common across all routes */}
-        <Navbar />
+        {/* <Navbar /> */}
 
         <Routes>
           <Route path="/" element={<Home />} />

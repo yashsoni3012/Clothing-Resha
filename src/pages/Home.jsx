@@ -6,11 +6,13 @@ import ClothingShowcase from '../components/ClothingShowcase'
 import ImageSlider from '../components/ImageSlider'
 import ImageGrid from '../components/ImageGrid'
 import Footer from '../components/Footer'
+import HeroWithNavbar from '../components/HeroWithNavbar'
 
 const Home = () => {
   return (
     <div>
-      <Navbar/>
+      {/* <HeroWithNavbar/> */}
+      {/* <Navbar/> */}
       <Carousel/>
       <ClothingTextSection/>
       <ClothingShowcase/>
