@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import centerImage from "../assets/ImageGridNew.jpeg";
-import left1 from "../assets/ImageGrid2.jpeg";
+import left1 from "../assets/ImageGrid3.jpeg";
 import left2 from "../assets/ImageGrid3.jpeg";
 import right1 from "../assets/ImageGrid6.jpeg";
 import right2 from "../assets/ImageGrid8.jpeg";
