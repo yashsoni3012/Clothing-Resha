@@ -1,12 +1,11 @@
 import React from "react";
 import { FaInstagram, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
-import logo from "../assets/logo_resha.png";
-// Update with your logo path
+import logo from "../assets/logo_resha.png"; // Update path if needed
 
 const Footer = () => {
   return (
     <footer
-      className="text-white px-6 py-10"
+      className="text-white px-6 pt-10 pb-4"
       style={{
         background: "linear-gradient(to bottom, #1A1A1A,  #6D0D2F)",
       }}
@@ -29,7 +28,6 @@ const Footer = () => {
               Subscribe
             </button>
           </div>
-          <p className="text-xs mt-2">© All rights reserved. House Of Resha</p>
         </div>
 
         {/* Column 2 */}
@@ -48,7 +46,12 @@ const Footer = () => {
             </li>
             <li>
               <a href="#" className="hover:underline">
-                Solutions
+                Collection
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Contact
               </a>
             </li>
           </ul>
@@ -75,6 +78,11 @@ const Footer = () => {
             </a>
           </div>
         </div>
+      </div>
+
+      {/* Always Bottom Line */}
+      <div className="text-center text-sm font-bold mt-8 opacity-70">
+        © All rights reserved. House Of Resha
       </div>
     </footer>
   );
