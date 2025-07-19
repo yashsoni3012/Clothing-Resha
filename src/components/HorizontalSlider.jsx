@@ -328,7 +328,7 @@ const HorizontalScrollSection = () => {
       </div>
 
       {/* Section Indicators */}
-      <div className="fixed right-8 top-1/2 transform -translate-y-1/2 flex flex-col gap-3 z-50">
+      {/* <div className="fixed right-8 top-1/2 transform -translate-y-1/2 flex flex-col gap-3 z-50">
         {sections.map((_, index) => (
           <motion.div
             key={index}
@@ -349,7 +349,7 @@ const HorizontalScrollSection = () => {
             />
           </motion.div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
