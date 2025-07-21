@@ -53,9 +53,9 @@ const Wigs_By_EstY = () => {
 
         {/* Left Side: Both Texts Aligned Bottom */}
         <div className="md:w-1/2 w-full flex flex-col justify-end h-[600px] gap-6">
-          
+
           <p className="text-xl sm:text-2xl md:text-4xl font-semibold text-[#800000] uppercase mt-8 sm:mt-16 w-full text-start px-2">
-           <span className='pl-24'> With the amount of</span><br/> work that goes into every piece, we have decided to work with only one salon we trust.
+            <span className='pl-24'> With the amount of</span><br /> work that goes into every piece, we have decided to work with only one salon we trust.
           </p>
           <p className="text-sm sm:text-base md:text-sm font-semibold text-[#800000] uppercase mt-4 w-full text-start px-2">
             We work with <strong>BY ESTY</strong> because we know they will treat, color, cut, and style every one of our wigs correctly so that for you it will come out perfectly.
@@ -88,6 +88,15 @@ const Wigs_By_EstY = () => {
           </div>
         </div>
       </div>
+
+      <div className="w-full px-5">
+        <div className="max-w-8xl mx-auto">
+          <hr className="border-t border-[#800000] w-full" />
+        </div>
+      </div>
+
+
+
     </div>
   );
 };

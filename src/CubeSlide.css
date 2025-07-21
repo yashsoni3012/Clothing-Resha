@@ -1,0 +1,29 @@
+/* CubeSlide.css */
+
+@keyframes repeatText {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(-25%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  75% {
+    transform: translateY(-75%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.repeat-text {
+  display: inline-block;
+  transition: all 0.4s ease;
+  animation-fill-mode: forwards;
+}
+
+.animate-repeatText {
+  animation: repeatText 1.2s ease-in-out infinite;
+}
