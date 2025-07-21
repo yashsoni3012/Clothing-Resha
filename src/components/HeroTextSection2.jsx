@@ -66,14 +66,7 @@ const HeroTextSection = () => {
 
     return (
         <div className="w-full min-h-screen" style={{ backgroundColor: "#FFF9EC" }}>
-            {/* Top Logo Section */}
-            <div className="w-full px-4 sm:px-8 md:px-12 lg:px-20 pt-8 flex justify-start">
-                <img
-                    src={reshaImage}
-                    alt="HERE'S YOUR RESHA"
-                    className="max-w-full h-auto w-[80vw] sm:w-[60vw] md:w-[50vw] lg:w-[40vw]"
-                />
-            </div>
+            
 
             {/* Main Section */}
             <div className="w-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20 pb-12 gap-8">
@@ -81,17 +74,16 @@ const HeroTextSection = () => {
                 <div className="md:w-1/2 flex flex-col justify-between h-auto md:h-[850px]">
                     <div>
                         <p className="text-xl sm:text-2xl md:text-4xl font-semibold text-[#800000] uppercase text-left">
-                            <span className="text-sm sm:text-base md:text-lg font-bold text-[#800000] pr-2">01</span>
+                            <span className="text-sm sm:text-base md:text-lg font-bold text-[#800000] pr-2">03</span>
                             <span className="pl-4 sm:pl-6 md:pl-24 inline-block">
-                                It all starts with hair,
+                               Here comes the cap, or
                             </span>
                             <br className="hidden sm:block" />
-                            the highest quality European hair.
+                           the canvas as we call it
                         </p>
 
                         <p className="text-sm sm:text-base md:text-sm font-semibold text-[#800000] uppercase mt-4 text-left px-2 sm:px-0">
-                            To be precise, that we purchase on a head-by-head basis ensuring
-                            that we know exactly who and where it's coming from.
+                            Made with the lightest weight Swiss lace for ultimate comfort, and the most natural flow. We use lace that goes wider and deeper for hair that sits tightly, naturally, and above all comfortably. 
                         </p>
                     </div>
                     <div
@@ -144,12 +136,14 @@ const HeroTextSection = () => {
                         />
                     </div>
                     <p className="text-xl sm:text-2xl md:text-4xl font-semibold text-[#800000] uppercase mt-8 sm:mt-16 w-full text-start px-2">
-                        <span className="text-sm sm:text-base md:text-lg font-bold text-[#800000] pr-2">02</span>
+                        <span className="text-sm sm:text-base md:text-lg font-bold text-[#800000] pr-2">04</span>
                         <span className="pl-4 sm:pl-6 md:pl-24 inline-block">
-                            Based on what the
+                            Now that the cap is
                         </span>
                         <br className="hidden sm:block" />
-                        piece will become
+                        crafted and the hair is 
+                        <br className="hidden sm:blobk"/><br/>
+                        assembled
                     </p>
 
 

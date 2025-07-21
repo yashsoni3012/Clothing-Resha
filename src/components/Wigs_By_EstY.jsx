@@ -54,9 +54,14 @@ const Wigs_By_EstY = () => {
         {/* Left Side: Both Texts Aligned Bottom */}
         <div className="md:w-1/2 w-full flex flex-col justify-end h-[600px] gap-6">
 
-          <p className="text-xl sm:text-2xl md:text-4xl font-semibold text-[#800000] uppercase mt-8 sm:mt-16 w-full text-start px-2">
-            <span className='pl-24'> With the amount of</span><br /> work that goes into every piece, we have decided to work with only one salon we trust.
-          </p>
+          <div className="flex items-start gap-3 text-left w-full px-2 mt-8 sm:mt-16">
+  <span className="text-sm sm:text-base md:text-lg font-bold text-[#800000] mt-1">05</span>
+  <p className="text-xl sm:text-2xl md:text-4xl font-semibold text-[#800000] uppercase">
+    <span className="pl-24">With the amount of</span><br />
+    work that goes into every piece, we have decided to work with only one salon we trust.
+  </p>
+</div>
+
           <p className="text-sm sm:text-base md:text-sm font-semibold text-[#800000] uppercase mt-4 w-full text-start px-2">
             We work with <strong>BY ESTY</strong> because we know they will treat, color, cut, and style every one of our wigs correctly so that for you it will come out perfectly.
           </p>

@@ -14,6 +14,8 @@ import HeroImageSection from "../components/HeroImageSection";
 import Wigs_By_EstY from "../components/Wigs_By_EstY";
 import LetsWigOut from "../components/LetsWigOut";
 import BookConsultation from "../components/BookConsultation";
+import HeroTextSection2 from "../components/HeroTextSection2";
+import GridImages from "../components/GridImages";
 
 
 
@@ -26,10 +28,12 @@ const Home = () => {
       <ClothingTextSection />
       <HorizontalScrollSection />
       <HeroTextSection/>
+      <HeroTextSection2/>
       <HeroImageSection/>
       <Wigs_By_EstY/>
       <LetsWigOut/>
       <BookConsultation/>
+      <GridImages/>
       {/* <ScrollImageReveal/> */}
       {/* <ClothingShowcase/> */}
       {/* <ImageSlider/> */}

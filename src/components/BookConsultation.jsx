@@ -1,20 +1,21 @@
 import React from 'react';
 import '../../src/CubeSlide.css'; // You must create this file
 
-
 const BookConsultation = () => {
   return (
-    <div className="w-full bg-[#fdf7eb] py-6">
-      <div className="max-w-[1536px] mx-auto px-6 border-y border-[#fcd6c8] flex items-center justify-between">
-        
+    <div className="w-full bg-[#fdf7eb] py-16">
+      <div className="max-w-[1536px] mx-auto px-6 border-y border-[#ce3737] flex items-center justify-between">
+
+
         {/* Left Section with repeat animation */}
         <div className="flex items-center gap-4 cursor-pointer group overflow-hidden">
           <span className="text-red-500 text-2xl">&#10140;</span>
 
-          <div className="relative h-10 overflow-hidden">
-            <div className="repeat-text text-2xl sm:text-3xl md:text-4xl font-bold text-red-500 group-hover:animate-repeatText">
+          <div className="relative h-14 overflow-hidden">
+            <div className="repeat-text text-5xl font-bold text-red-500 group-hover:animate-repeatText">
               BOOK CONSULTATION
             </div>
+
           </div>
         </div>
 
