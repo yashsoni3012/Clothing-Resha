@@ -32,7 +32,7 @@ const WigTypesSection = () => {
     <div className="w-full bg-[#6D0D2F] py-16 px-4 sm:px-8">
       {/* Heading with animation */}
       <div ref={ref} className="mb-16 max-w-[1536px] mx-auto">
-        {["However", "you wear it,", "we have it."].map((line, index) => (
+        {["HOWEVER", "YOU WEAR IT,", "WE HAVE IT."].map((line, index) => (
           <motion.h2
             key={index}
             custom={index}

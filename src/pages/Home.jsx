@@ -16,6 +16,7 @@ import LetsWigOut from "../components/LetsWigOut";
 import BookConsultation from "../components/BookConsultation";
 import HeroTextSection2 from "../components/HeroTextSection2";
 import GridImages from "../components/GridImages";
+import ContinuousSlider from "../components/ContinuousSlider";
 
 
 
@@ -34,6 +35,7 @@ const Home = () => {
       <LetsWigOut/>
       <BookConsultation/>
       <GridImages/>
+      <ContinuousSlider/>
       {/* <ScrollImageReveal/> */}
       {/* <ClothingShowcase/> */}
       {/* <ImageSlider/> */}

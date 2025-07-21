@@ -4,14 +4,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Carousel from "./components/Carousel";
 import Home from "./pages/Home";
+import ScrollToTop from "../src/components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="relative">
         {/* You can include Navbar here if it’s common across all routes */}
         {/* <Navbar /> */}
-
         <Routes>
           <Route path="/" element={<Home />} />
           {/* Add more routes here if needed */}
