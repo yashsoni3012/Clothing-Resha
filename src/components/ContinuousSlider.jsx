@@ -24,14 +24,14 @@ const ContinuousSlider = () => {
           repeat: Infinity,
         }}
       >
-        {/* Duplicate image set to loop smoothly */}
         {[...images, ...images].map((img, index) => (
           <img
             key={index}
             src={img}
             alt={`slide-${index}`}
-            className="h-[800px] w-[600px] object-cover flex-shrink-0"
+            className="h-[300px] w-[300px] sm:h-[800px] sm:w-[600px] object-cover object-top flex-shrink-0"
           />
+
         ))}
       </motion.div>
     </div>

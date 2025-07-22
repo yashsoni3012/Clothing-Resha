@@ -76,7 +76,8 @@ const HeroTextSection = () => {
             </div>
 
             {/* Main Section */}
-            <div className="w-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20 pb-12 gap-8">
+            <div className="w-full flex flex-col-reverse md:flex-row px-4 sm:px-8 md:px-12 lg:px-20 pb-12 gap-8">
+
                 {/* Left Side */}
                 <div className="md:w-1/2 flex flex-col justify-between h-auto md:h-[850px]">
                     <div>

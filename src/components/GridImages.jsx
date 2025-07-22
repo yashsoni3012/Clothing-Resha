@@ -54,10 +54,12 @@ const WigTypesSection = () => {
             <img
               src={laceTop}
               alt="Lace Tops"
-              className="w-full h-[700px] object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-[400px] sm:h-[700px] object-cover object-top transition-transform duration-500 group-hover:scale-105"
             />
           </div>
-          <p className="text-[#FFF9EC] text-4xl font-semibold mt-4 text-left w-full">LACE TOPS</p>
+          <p className="text-[#FFF9EC] text-2xl sm:text-3xl lg:text-4xl font-semibold mt-4 text-left w-full">
+            LACE TOPS
+          </p>
         </div>
 
         {/* Card 2 */}
@@ -66,10 +68,12 @@ const WigTypesSection = () => {
             <img
               src={laceFront}
               alt="Lace Fronts"
-              className="w-full h-[700px] object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-[400px] sm:h-[700px] object-cover object-top transition-transform duration-500 group-hover:scale-105"
             />
           </div>
-          <p className="text-[#FFF9EC] text-4xl font-semibold mt-4 text-left w-full">LACE FRONTS</p>
+          <p className="text-[#FFF9EC] text-2xl sm:text-3xl lg:text-4xl font-semibold mt-4 text-left w-full">
+            LACE FRONTS
+          </p>
         </div>
 
         {/* Card 3 */}
@@ -78,10 +82,12 @@ const WigTypesSection = () => {
             <img
               src={multis}
               alt="Multis"
-              className="w-full h-[700px] object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-[400px] sm:h-[700px] object-cover object-top transition-transform duration-500 group-hover:scale-105"
             />
           </div>
-          <p className="text-[#FFF9EC] text-4xl font-semibold mt-4 text-left w-full">MULTIS</p>
+          <p className="text-[#FFF9EC] text-2xl sm:text-3xl lg:text-4xl font-semibold mt-4 text-left w-full">
+            MULTIS
+          </p>
         </div>
       </div>
     </div>
