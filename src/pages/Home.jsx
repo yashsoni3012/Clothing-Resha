@@ -17,6 +17,7 @@ import BookConsultation from "../components/BookConsultation";
 import HeroTextSection2 from "../components/HeroTextSection2";
 import GridImages from "../components/GridImages";
 import ContinuousSlider from "../components/ContinuousSlider";
+import LogoScrollEffect from "../components/LogoScrollEffect";
 
 
 
@@ -29,6 +30,7 @@ const Home = () => {
       <ClothingTextSection />
       <HorizontalScrollSection />
       <HeroTextSection/>
+      <LogoScrollEffect/>
       <HeroTextSection2/>
       <HeroImageSection/>
       <Wigs_By_EstY/>

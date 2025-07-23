@@ -2,8 +2,8 @@ import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import reshaImage from "../assets/color-logo.png";
-import rightImage from "../assets/herotextimage2.jpeg";
-import bottomLeftImage from "../assets/herotextimage3.jpeg";
+import rightImage from "../assets/herotextimage4.jpeg";
+import bottomLeftImage from "../assets/herotextimage5.jpeg";
 
 const HeroTextSection = () => {
     // Controls for left image animation
@@ -43,8 +43,8 @@ const HeroTextSection = () => {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 2,
-                delay: 0.4, // Delay to sync with shutter
+                duration: 1.5,
+                delay: 0.3, // Delay to sync with shutter
                 ease: "easeOut"
             }
         }

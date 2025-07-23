@@ -43,8 +43,8 @@ const HeroTextSection = () => {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 2,
-                delay: 0.4, // Delay to sync with shutter
+                duration: 1.5,
+                delay: 0.3, // Delay to sync with shutter
                 ease: "easeOut"
             }
         }
