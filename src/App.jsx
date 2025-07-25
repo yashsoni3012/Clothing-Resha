@@ -5,11 +5,13 @@ import Navbar from "./components/Navbar";
 import Carousel from "./components/Carousel";
 import Home from "./pages/Home";
 import ScrollToTop from "../src/components/ScrollToTop";
+import SmoothScroll from "./components/SmoothScroll";
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <SmoothScroll/>
       <div className="relative">
         {/* You can include Navbar here if it’s common across all routes */}
         {/* <Navbar /> */}

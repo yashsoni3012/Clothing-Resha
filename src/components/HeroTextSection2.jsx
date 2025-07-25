@@ -65,7 +65,7 @@ const HeroTextSection = () => {
     };
 
     return (
-        <div className="w-full min-h-screen" style={{ backgroundColor: "#FFF9EC" }}>
+        <div className="w-full min-h-screen t-[10vh] md:pt-[15vh]" style={{ backgroundColor: "#FFF9EC" }}>
             
 
             {/* Main Section */}

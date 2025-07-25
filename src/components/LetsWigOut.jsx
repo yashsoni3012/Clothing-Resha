@@ -10,12 +10,12 @@ const LetsWigOut = () => {
         {/* Text Section */}
         <div className="text-[#800000] w-full">
           <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight text-left">
-            LET’S WIG
+            LET'S WEAR
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 mt-4">
             <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-left">
-              OUT
+              IN
             </p>
 
             {/* Image beside "OUT" */}
