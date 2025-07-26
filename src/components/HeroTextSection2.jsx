@@ -1,9 +1,8 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import reshaImage from "../assets/color-logo.png";
-import rightImage from "../assets/herotextimage4.jpeg";
-import bottomLeftImage from "../assets/herotextimage5.jpeg";
+import rightImage from "../assets/poster images/poster6.png";
+import bottomLeftImage from "../assets/poster images/poster5.png";
 
 const HeroTextSection = () => {
     // Controls for left image animation
@@ -66,7 +65,7 @@ const HeroTextSection = () => {
 
     return (
         <div className="w-full min-h-screen t-[10vh]" style={{ backgroundColor: "#FFF9EC" }}>
-            
+
 
             {/* Main Section */}
             <div className="w-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20 pb-12 gap-8">
@@ -76,14 +75,14 @@ const HeroTextSection = () => {
                         <p className="text-xl sm:text-2xl md:text-4xl font-semibold text-[#800000] uppercase text-left">
                             <span className="text-sm sm:text-base md:text-lg font-bold text-[#800000] pr-2">03</span>
                             <span className="pl-4 sm:pl-6 md:pl-24 inline-block">
-                               Here comes the cap, or
+                                Here comes the cap, or
                             </span>
                             <br className="hidden sm:block" />
-                           the canvas as we call it
+                            the canvas as we call it
                         </p>
 
                         <p className="text-sm sm:text-base md:text-sm font-semibold text-[#800000] uppercase mt-4 text-left px-2 sm:px-0">
-                            Made with the lightest weight Swiss lace for ultimate comfort, and the most natural flow. We use lace that goes wider and deeper for hair that sits tightly, naturally, and above all comfortably. 
+                            Made with the lightest weight Swiss lace for ultimate comfort, and the most natural flow. We use lace that goes wider and deeper for hair that sits tightly, naturally, and above all comfortably.
                         </p>
                     </div>
                     <div
@@ -141,8 +140,8 @@ const HeroTextSection = () => {
                             Now that the cap is
                         </span>
                         <br className="hidden sm:block" />
-                        crafted and the hair is 
-                        <br className="hidden sm:blobk"/><br/>
+                        crafted and the hair is
+                        <br className="hidden sm:blobk" /><br />
                         assembled
                     </p>
 

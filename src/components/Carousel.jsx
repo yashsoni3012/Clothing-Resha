@@ -98,7 +98,7 @@ const Carousel = () => {
               {navItems.map((item, index) => (
                 <li
                   key={index}
-                  className="relative group px-5 py-1 text-white font-semibold rounded-full transition duration-300 cursor-pointer"
+                  className="relative group px-6 py-2 text-white font-semibold text-xl md:text-2xl lg:text-xl rounded-full transition duration-300 cursor-pointer hover:bg-white hover:bg-opacity-20"
                 >
                   {item}
                 </li>

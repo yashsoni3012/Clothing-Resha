@@ -270,19 +270,19 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import { motion, useSpring, useMotionValue, useTransform } from "framer-motion";
 import img1 from "../assets/ImageGrid1.jpeg";
-import guy1 from "../assets/freepik__the-style-is-candid-image-photography-with-natural__28556.jpeg";
-import guy2 from "../assets/freepik__the-style-is-candid-image-photography-with-natural__28556.jpeg";
-import guy3 from "../assets/freepik__the-style-is-candid-image-photography-with-natural__28556.jpeg";
-import girl1 from "../assets/freepik__the-style-is-candid-image-photography-with-natural__28556.jpeg";
-import girl2 from "../assets/freepik__the-style-is-candid-image-photography-with-natural__28556.jpeg";
-import girl3 from "../assets/freepik__the-style-is-candid-image-photography-with-natural__28556.jpeg";
+import guy1 from "../assets/poster images/poster7.png";
+import guy2 from "../assets/poster images/poster7.png";
+import guy3 from "../assets/poster images/poster3.png";
+import girl1 from "../assets/poster images/poster4.png";
+import girl2 from "../assets/poster images/poster5.png";
+import girl3 from "../assets/poster images/poster6.png";
 
 
 const HorizontalScrollSection = () => {
   const sections = [
     {
       type: "textWithImage",
-      content: "Your dreams deserve more than a design. They deserve a story.",
+      content: "But to us, the crafters of one of the most intimate parts of your life, you are our world.",
       src: guy1,
       layout: "reverse", // NEW: to flip text/image
     },
@@ -399,7 +399,7 @@ const HorizontalScrollSection = () => {
 
   return (
     <div className="relative bg-gray-900">
-      
+
 
       {/* Intro Section */}
       <section className="min-h-screen flex items-center justify-start px-4 sm:px-8 md:px-12 lg:px-20 relative overflow-hidden">
@@ -507,20 +507,19 @@ const HorizontalScrollSection = () => {
                 return (
                   <motion.div
                     key={index}
-                    className={`w-[60vw] flex ${
-                      item.layout === "vertical"
-                        ? "flex-col"
-                        : item.layout === "reverse"
+                    className={`w-[60vw] flex ${item.layout === "vertical"
+                      ? "flex-col"
+                      : item.layout === "reverse"
                         ? "lg:flex-row-reverse"
                         : "lg:flex-row"
-                    } gap-8 items-center justify-center p-8 text-white relative`}
+                      } gap-8 items-center justify-center p-8 text-white relative`}
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: index * 0.2 }}
                   >
                     <div className="flex-1 z-10">
                       <motion.p
-                        className="text-2xl md:text-4xl lg:text-5xl p-3 font-light leading-relaxed bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent"
+                        className="text-2xl md:text-4xl lg:text-5xl p-9 font-light leading-relaxed bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent"
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.3 }}
@@ -538,7 +537,7 @@ const HorizontalScrollSection = () => {
                       <img
                         src={item.src}
                         alt={`section-${index}`}
-                        className="object-top relative max-h-[600px] w-[400px] rounded-2xl object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                        className="object-top relative max-h-[600px] w-[400px] object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                       />
                     </motion.div>
                   </motion.div>
@@ -561,7 +560,7 @@ const HorizontalScrollSection = () => {
                       <img
                         src={item.src1}
                         alt={`pair-left-${index}`}
-                        className="object-top relative h-[70vh] w-full object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                        className="object-top relative h-[70vh] w-full object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                       />
                     </motion.div>
 
@@ -574,7 +573,7 @@ const HorizontalScrollSection = () => {
                       <img
                         src={item.src2}
                         alt={`pair-right-${index}`}
-                        className="object-top relative h-[70vh] w-full object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                        className="object-top relative h-[70vh] w-full object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                       />
                     </motion.div>
                   </motion.div>
@@ -627,7 +626,7 @@ const HorizontalScrollSection = () => {
                       <img
                         src={item.src}
                         alt={`section-${index}`}
-                        className="object-top relative max-h-[80vh] max-w-[600px] rounded-2xl object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                        className="object-top relative max-h-[80vh] max-w-[600px] object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                       />
                     </motion.div>
                   </motion.div>

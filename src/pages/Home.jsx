@@ -18,6 +18,7 @@ import HeroTextSection2 from "../components/HeroTextSection2";
 import GridImages from "../components/GridImages";
 import ContinuousSlider from "../components/ContinuousSlider";
 import LogoScrollEffect from "../components/LogoScrollEffect";
+import WordByWordScrollFill from "../components/WordByWordScrollFill";
 
 
 
@@ -28,6 +29,7 @@ const Home = () => {
       {/* <Navbar/> */}
       <Carousel />
       <ClothingTextSection />
+      <WordByWordScrollFill/>
       <HorizontalScrollSection />
       <HeroTextSection/>
       <LogoScrollEffect/>

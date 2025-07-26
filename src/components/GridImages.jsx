@@ -3,7 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import laceTop from '../assets/bannerBg3.jpeg';
 import laceFront from '../assets/letswigout.webp';
-import multis from '../assets/ImageGrid6.jpeg';
+import multis from '../assets/poster images/poster5.png';
 
 const textVariants = {
   hidden: { opacity: 0, y: 40 },
