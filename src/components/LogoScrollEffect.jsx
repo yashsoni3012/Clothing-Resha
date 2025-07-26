@@ -15,8 +15,8 @@ const HorizontalScrollingLogo = () => {
     // Animation transforms
     const logoX = useTransform(scrollYProgress, [0, 0.65], ["100%", "-100%"]);
     const mainImageY = useTransform(scrollYProgress, [0, 0.95], ["0%", "10%"]);
-    const textX = useTransform(scrollYProgress, [0, 0.7], ["-70%", "310%"]);
-    const textY = useTransform(scrollYProgress, [0, 0.7], ["0%", "550%"]);
+    const textX = useTransform(scrollYProgress, [0, 0.7], ["-90%", "380%"]);
+    const textY = useTransform(scrollYProgress, [0, 0.7], ["0%", "430%"]);
     const textZ = useTransform(scrollYProgress, [0, 0.7], ["300%", "-350%"]);
 
 
@@ -70,7 +70,7 @@ const HorizontalScrollingLogo = () => {
                             textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
                         }}
                     >
-                        HEAD
+                        FALL
                     </motion.div>
 
                     <motion.div
@@ -81,7 +81,7 @@ const HorizontalScrollingLogo = () => {
                             textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
                         }}
                     >
-                        FALL
+                        HEAD
                     </motion.div>
 
                     <motion.div
