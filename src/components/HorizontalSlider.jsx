@@ -266,7 +266,6 @@
 
 // export default HorizontalScrollSection;
 
-
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import { motion, useSpring, useMotionValue, useTransform } from "framer-motion";
 import img1 from "../assets/ImageGrid1.jpeg";
@@ -277,31 +276,28 @@ import girl1 from "../assets/poster images/poster4.png";
 import girl2 from "../assets/poster images/poster5.png";
 import girl3 from "../assets/poster images/poster6.png";
 
-
 const HorizontalScrollSection = () => {
   const sections = [
     {
       type: "textWithImage",
       content: "But to us, the crafters of one of the most intimate parts of your life, you are our world.",
       src: guy1,
-      layout: "reverse", // NEW: to flip text/image
+      layout: "reverse",
     },
     {
       type: "textWithImage",
       content: "We believe comfort and beauty go hand-in-hand.",
       src: guy3,
-      layout: "vertical", // NEW: image below text
+      layout: "vertical",
     },
     {
       type: "text",
       content: "Crafted for Your World",
       subtitle: "Every element tells your story.",
     },
-    // original ones below
     {
       type: "textWithImage",
-      content:
-        "But to us, the crafters of one of the most intimate parts of your life, you are our world.",
+      content: "But to us, the crafters of one of the most intimate parts of your life, you are our world.",
       src: girl3,
     },
     {
@@ -319,8 +315,7 @@ const HorizontalScrollSection = () => {
     {
       type: "text",
       content: "Designed to Be Remembered",
-      subtitle:
-        "Because your presence deserves more than just a look—it deserves a legacy.",
+      subtitle: "Because your presence deserves more than just a look—it deserves a legacy.",
     },
   ];
 
@@ -339,7 +334,6 @@ const HorizontalScrollSection = () => {
     height: typeof window !== "undefined" ? window.innerHeight : 1080,
   });
 
-  // Progress indicator
   const scrollProgress = useTransform(
     smoothScroll,
     [0, -dimensions.width * sections.length * 0.5],
@@ -382,8 +376,7 @@ const HorizontalScrollSection = () => {
               1
             );
             const smoothProgress = progress * progress * (3 - 2 * progress);
-            const newX =
-              -smoothProgress * dimensions.width * sections.length * 0.5;
+            const newX = -smoothProgress * dimensions.width * sections.length * 0.5;
             scrollY.set(newX);
           }
 
@@ -399,8 +392,6 @@ const HorizontalScrollSection = () => {
 
   return (
     <div className="relative bg-gray-900">
-
-
       {/* Intro Section */}
       <section className="min-h-screen flex items-center justify-start px-4 sm:px-8 md:px-12 lg:px-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-pink-900/20" />
@@ -408,10 +399,10 @@ const HorizontalScrollSection = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative z-10"
+          className="relative z-10 w-full"
         >
-          <h1 className="text-white text-left font-bold leading-tight text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl">
-            <span className="bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
+          <h1 className="text-white text-left font-bold leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+            <span className="bg-gradient-to-r from-white via-purple-100 to-pink-200 bg-clip-text text-transparent">
               We're not
             </span>
             <br />
@@ -461,7 +452,6 @@ const HorizontalScrollSection = () => {
           height: `${totalScrollHeight + dimensions.height}px`,
         }}
       >
-        {/* ✨ Floating animated background bubbles */}
         <div className="sticky top-0 h-screen w-screen overflow-hidden bg-gradient-to-br from-purple-900/20 via-transparent to-pink-900/20">
           <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
             {[...Array(6)].map((_, i) => (
@@ -486,11 +476,10 @@ const HorizontalScrollSection = () => {
             ))}
           </div>
 
-          {/* ✅ Existing animated horizontal scroll section */}
           <motion.div
             className="flex h-full"
             style={{
-              width: `${sections.length * 60}vw`,
+              width: `${sections.length * (dimensions.width < 768 ? 100 : 60)}vw`,
               x: smoothScroll,
             }}
             transition={{
@@ -501,43 +490,28 @@ const HorizontalScrollSection = () => {
             }}
           >
             {sections.map((item, index) => {
-              const isEven = index % 2 === 0;
-
               if (item.type === "textWithImage") {
                 return (
                   <motion.div
                     key={index}
-                    className={`w-[60vw] flex ${item.layout === "vertical"
-                      ? "flex-col"
-                      : item.layout === "reverse"
-                        ? "lg:flex-row-reverse"
-                        : "lg:flex-row"
-                      } gap-8 items-center justify-center p-8 text-white relative`}
+                    className={`w-[${dimensions.width < 768 ? '100' : '60'}vw] flex ${
+                      item.layout === "vertical" ? "flex-col" : 
+                      item.layout === "reverse" ? "flex-col lg:flex-row-reverse" : "flex-col lg:flex-row"
+                    } gap-4 md:gap-8 items-center justify-center p-4 md:p-8 text-white relative`}
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: index * 0.2 }}
                   >
                     <div className="flex-1 z-10">
-                      <motion.p
-                        className="text-2xl md:text-4xl lg:text-5xl p-9 font-light leading-relaxed bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent"
-                        initial={{ opacity: 0, x: -50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.3 }}
-                      >
+                      <motion.p className="text-xl md:text-2xl lg:text-4xl p-4 md:p-9 font-light leading-relaxed bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
                         {item.content}
                       </motion.p>
                     </div>
-
-                    <motion.div
-                      className="relative group"
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: index * 0.4 }}
-                    >
+                    <motion.div className="relative group">
                       <img
                         src={item.src}
                         alt={`section-${index}`}
-                        className="object-top relative max-h-[600px] w-[400px] object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                        className="object-top relative max-h-[50vh] md:max-h-[600px] w-full md:w-[400px] object-cover shadow-lg md:shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                       />
                     </motion.div>
                   </motion.div>
@@ -546,34 +520,22 @@ const HorizontalScrollSection = () => {
                 return (
                   <motion.div
                     key={index}
-                    className="w-[80vw] flex items-center justify-center gap-8 px-8"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.2 }}
+                    className={`w-[${dimensions.width < 768 ? '100' : '80'}vw] flex ${
+                      dimensions.width < 768 ? 'flex-col' : 'flex-row'
+                    } items-center justify-center gap-4 md:gap-8 px-4 md:px-8`}
                   >
-                    <motion.div
-                      className="relative group flex-1"
-                      initial={{ opacity: 0, x: -100 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.3 }}
-                    >
+                    <motion.div className="relative group flex-1">
                       <img
                         src={item.src1}
                         alt={`pair-left-${index}`}
-                        className="object-top relative h-[70vh] w-full object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                        className="object-top relative h-[40vh] md:h-[70vh] w-full object-cover shadow-lg md:shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                       />
                     </motion.div>
-
-                    <motion.div
-                      className="relative group flex-1"
-                      initial={{ opacity: 0, x: 100 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.4 }}
-                    >
+                    <motion.div className="relative group flex-1">
                       <img
                         src={item.src2}
                         alt={`pair-right-${index}`}
-                        className="object-top relative h-[70vh] w-full object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                        className="object-top relative h-[40vh] md:h-[70vh] w-full object-cover shadow-lg md:shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                       />
                     </motion.div>
                   </motion.div>
@@ -582,27 +544,13 @@ const HorizontalScrollSection = () => {
                 return (
                   <motion.div
                     key={index}
-                    className="w-[80vw] flex flex-col items-center justify-center p-8 text-white text-center relative"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: index * 0.2 }}
+                    className={`w-[${dimensions.width < 768 ? '100' : '80'}vw] flex flex-col items-center justify-center p-4 md:p-8 text-white text-center relative`}
                   >
-                    <motion.h2
-                      className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-2 pb-3 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent z-10"
-                      initial={{ opacity: 0, y: -30 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.3 }}
-                    >
+                    <motion.h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight mb-2 pb-3 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent z-10">
                       {item.content}
                     </motion.h2>
-
                     {item.subtitle && (
-                      <motion.p
-                        className="text-lg md:text-xl text-gray-300 z-10"
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.4 }}
-                      >
+                      <motion.p className="text-base md:text-lg lg:text-xl text-gray-300 z-10">
                         {item.subtitle}
                       </motion.p>
                     )}
@@ -612,21 +560,13 @@ const HorizontalScrollSection = () => {
                 return (
                   <motion.div
                     key={index}
-                    className="w-[80vw] flex items-center justify-center p-8 relative"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: index * 0.2 }}
+                    className={`w-[${dimensions.width < 768 ? '100' : '80'}vw] flex items-center justify-center p-4 md:p-8 relative`}
                   >
-                    <motion.div
-                      className="relative group"
-                      initial={{ opacity: 0, rotate: -10 }}
-                      animate={{ opacity: 1, rotate: 0 }}
-                      transition={{ delay: index * 0.3 }}
-                    >
+                    <motion.div className="relative group">
                       <img
                         src={item.src}
                         alt={`section-${index}`}
-                        className="object-top relative max-h-[80vh] max-w-[600px] object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                        className="object-top relative max-h-[60vh] md:max-h-[80vh] w-full max-w-[90vw] md:max-w-[600px] object-cover shadow-lg md:shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                       />
                     </motion.div>
                   </motion.div>

@@ -12,7 +12,7 @@ const HorizontalScrollingLogo = () => {
     offset: ["start end", "end start"],
   });
 
-  // Animation transforms
+  // Animation transforms (unchanged)
   const logoX = useTransform(scrollYProgress, [0, 0.65], ["100%", "-100%"]);
   const mainImageY = useTransform(scrollYProgress, [0, 0.95], ["0%", "10%"]);
 
@@ -31,7 +31,7 @@ const HorizontalScrollingLogo = () => {
       className="relative w-full h-[120vh] bg-[#FFF9EC] overflow-hidden"
       style={{ willChange: "transform" }}
     >
-      {/* Sliding Logo */}
+      {/* Sliding Logo - only made height responsive */}
       <motion.div
         className="fixed top-0 left-0 right-0 flex justify-center z-0"
         style={{
@@ -43,12 +43,12 @@ const HorizontalScrollingLogo = () => {
         <img
           src={logoImage}
           alt="Sliding Logo"
-          className="w-auto h-[85vh] object-contain opacity-100 pointer-events-none"
+          className="w-auto h-[50vh] md:h-[85vh] object-contain opacity-100 pointer-events-none"
           style={{ willChange: "transform" }}
         />
       </motion.div>
 
-      {/* Main Image and Text */}
+      {/* Main Image and Text - only made image size responsive */}
       <motion.div
         className="sticky top-0 h-screen flex items-center justify-center z-10"
         style={{
@@ -60,10 +60,10 @@ const HorizontalScrollingLogo = () => {
           <img
             src={mainImage}
             alt="Main Image"
-            className="w-[60vw] h-[70vh] object-contain"
+            className="w-[90vw] md:w-[60vw] h-[50vh] md:h-[70vh] object-contain"
           />
 
-          {/* Sliding Texts */}
+          {/* Sliding Texts - completely unchanged */}
           <motion.div
             className="absolute left-10 bottom-100 text-white text-4xl md:text-6xl font-bold z-20 whitespace-nowrap"
             style={{

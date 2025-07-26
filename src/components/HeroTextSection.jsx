@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import reshaImage from "../assets/color-logo.png";
 import rightImage from "../assets/poster images/poster7.png";
-import bottomLeftImage from "../assets/poster images/poster9.jpg";
+import bottomLeftImage from "../assets/poster images/poster10.jpg";
 
 const HeroTextSection = () => {
     // Controls for left image animation
