@@ -19,6 +19,8 @@ import GridImages from "../components/GridImages";
 import ContinuousSlider from "../components/ContinuousSlider";
 import LogoScrollEffect from "../components/LogoScrollEffect";
 import WordByWordScrollFill from "../components/WordByWordScrollFill";
+import Words3 from "../components/Words3";
+import ScrollAnimation from "../components/ScrollAnimation";
 
 
 
@@ -29,12 +31,14 @@ const Home = () => {
       {/* <Navbar/> */}
       <Carousel />
       <ClothingTextSection />
+      {/* <ScrollAnimation/> */}
+      {/* <Words3/> */}
       <WordByWordScrollFill/>
       <HorizontalScrollSection />
       <HeroTextSection/>
       <LogoScrollEffect/>
       <HeroTextSection2/>
-      <HeroImageSection/>
+      {/* <HeroImageSection/> */}
       <Wigs_By_EstY/>
       <LetsWigOut/>
       <BookConsultation/>
